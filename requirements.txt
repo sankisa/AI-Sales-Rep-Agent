@@ -4,6 +4,4 @@ langchain
 langchain_community
 langchain_groq
 PyPDF2
-docx
-mimetypes
-io
+python-docx
