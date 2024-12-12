@@ -56,7 +56,7 @@ max_tokens = st.sidebar.slider(
 
 # Create a form container
 with st.form("company_info", clear_on_submit=True):
-    st.title("Insight Assistant")
+    st.title("Insight Helper")
     product_name = st.text_input("Product Name: ")
     company_url = st.text_input("Company URL: ")
     targeted_company_name = st.text_input("Targeted Company Name: ")
