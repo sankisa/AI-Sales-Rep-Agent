@@ -183,12 +183,8 @@ Targeted Company Name: {targeted_company_name}
             "value_proposition": value_proposition,
             "targeted_customer": targeted_customer,
             "targeted_company_name": targeted_company_name
-
-            
-            })
+          })
     
- 
-
     # Display results
 
 st.markdown(company_insights)
