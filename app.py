@@ -95,15 +95,15 @@ with st.form("company_info", clear_on_submit=True):
 
     # Perform a search using TavilySearchResults with user's query
         if product_name and company_url:
-          #try:
+          try:
             st.spinner("Getting related search results....")
             #search internet
             company_info = search.invoke(company_url)
             competitor_info = search.invoke(competitor_url)
             if not company_info or not competitor_info:
               st.warning("No data found for the given URLs. Please verify the URLs and try again")
-          #except Exception as e:
-            st.error(f"Failed to retireve search results: ")
+          except Exception as e:
+            st.error(f"Failed to retireve search results: {e} ")
 
         print(company_info)
         print(competitor_info)
