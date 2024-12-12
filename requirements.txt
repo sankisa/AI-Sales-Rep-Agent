@@ -1,0 +1,6 @@
+groq
+streamlit
+langchain
+langchain_community
+langchain_groq
+PyPDF2
