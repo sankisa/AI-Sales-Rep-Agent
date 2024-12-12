@@ -5,3 +5,6 @@ langchain_community
 langchain_groq
 PyPDF2
 docx
+exception
+mimetypes
+io
