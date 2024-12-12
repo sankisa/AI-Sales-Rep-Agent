@@ -150,8 +150,7 @@ include some Key points to sell products to the targeted company
 
 Additional Context:
 Where relevant, incorporate financial data, recent market trends, and notable company or industry initiatives that demonstrate the urgency and necessity of adopting our product. Focus on creating a compelling business case that drives swift decision-making.
-Share insights: Identify share market value for each year between 2020-2024 for both the companies and organize in a table
- 
+Share Insights: "Provide the yearly stock values (opening, closing, or average) for each year from 2020 to 2024 for two specified companies (please state the company names). Present the information in a structured table format for clear comparison."
    
 Ensure the tone is professional yet engaging, targeting senior decision-makers.
 
