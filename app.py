@@ -57,13 +57,13 @@ max_tokens = st.sidebar.slider(
 # Create a form container
 with st.form("company_info", clear_on_submit=True):
     st.title("Insight Helper")
-    product_name = st.text_input("Product Name: ", placeholder="Enter the product name")
-    company_url = st.text_input("Company URL: ", placeholder="Enter the company website URL")
-    targeted_company_name = st.text_input("Targeted Company Name: ", placeholder="Enter the targeted company's name")
-    competitor_url = st.text_input("Competitor URL: ", placeholder="Enter the competitor's website URL")
-    product_category = st.text_input("Product Category: ", placeholder="Enter the product category")
-    value_proposition = st.text_input("Value Proposition: ", placeholder="Describe the value proposition")
-    targeted_customer = st.text_input("Targeted Customer: ", placeholder="Describe the target customer")
+    product_name = st.text_input("Product Name: ")
+    company_url = st.text_input("Company URL: ")
+    targeted_company_name = st.text_input("Targeted Company Name: ")
+    competitor_url = st.text_input("Competitor URL: ")
+    product_category = st.text_input("Product Category: ")
+    value_proposition = st.text_input("Value Proposition: ")
+    targeted_customer = st.text_input("Targeted Customer: ")
     uploaded_file = st.file_uploader("Upload Product Overview (PDF, DOCX, TXT)", type=["pdf", "docx", "txt"])
     
    
