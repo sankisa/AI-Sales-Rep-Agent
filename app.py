@@ -1,4 +1,5 @@
 import streamlit as st
+from groq import Groq
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -9,7 +10,12 @@ from docx import Document
 import mimetypes
 
 # Model and Agent tools
-llm = ChatGroq(api_key=st.secrets["GROQ_API_KEY"])
+llm = ChatGroq(
+    model_name="llama-3.3-70b-versatile",  # replace with your model
+    temperature=0.7,
+    max_tokens=500,
+)
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 parser = StrOutputParser()
 search = TavilySearchResults(max_results=2)
 
@@ -169,7 +175,7 @@ Targeted Company Name: {targeted_company_name}
       # Prompt Template
         prompt_template = ChatPromptTemplate([("system", prompt)])
       # Chain
-        chain = prompt_template | llm | parser
+        chain = prompt_template | llm| parser
 
       # Result/Insights
    
